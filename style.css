@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 15px;
+}
+
+.card {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  width: 300px;
+}
+
+.head-card {
+  position: relative;
+}
+
+.image {
+  width: 300px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.overlay {
+  top: 0;
+  width: 100%;
+  height: 99%;
+  background-color: hsl(277, 64%, 61%);
+  border-radius: 10px 10px 0px 0px;
+  position: absolute;
+  z-index: 9;
+  opacity: 0.5;
+}
+
+.body-card {
+  text-align: center;
+  padding: 20px;
+  color: hsl(0, 0%, 100%);
+  margin-top: 20px;
+}
+
+.heading {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.insights {
+  color: hsl(277, 64%, 61%);
+}
+
+.paragraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.numbers {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.desc {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    height: 100vh;
+  }
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+  }
+
+  .head-card {
+    width: 50%;
+    display: inline-block;
+  }
+
+  .body-card {
+    width: 50%;
+    padding: 60px;
+    padding-right: 100px;
+    text-align: left;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+  }
+}
